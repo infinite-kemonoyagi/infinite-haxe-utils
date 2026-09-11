@@ -1,0 +1,10 @@
+{
+    "name": "infinite-util",
+    "url": "https://github.com/infinite-kemonoyagi/infinite-haxe-utils/",
+    "license": "MIT",
+    "tags": ["infinite", "utils", "flixel", "openfl", "lime", "assets"],
+    "description": "Infinite Utils",
+    "version": "0.0.1",
+    "releasenote": "Initial release",
+    "contributors": ["Infinite-Kemonoyagi"]
+}

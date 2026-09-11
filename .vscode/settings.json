@@ -1,0 +1,13 @@
+{
+  "[haxe]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+
+  "prettier.tabWidth": 2,
+  "editor.tabSize": 2,
+
+  "files.insertFinalNewline": true,
+  "prettier.endOfLine": "lf",
+  "files.eol": "\n"
+}
