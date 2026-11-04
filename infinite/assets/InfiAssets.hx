@@ -7,6 +7,10 @@ package infinite.assets;
  */
 class InfiAssets
 {
+  public static var instance:InfiAssets;
+
+  public static inline function initialize():Void instance = new InfiAssets();
+
   /**
    * store all your loaded assets with some useful features
    *
