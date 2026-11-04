@@ -1,5 +1,15 @@
 package infinite.assets;
 
+#if sys
+import sys.FileSystem;
+#else
+import openfl.utils.Assets;
+#end
+
+#if flixel
+import flixel.system.FlxAssets.FlxGraphicAsset;
+#end
+
 /**
  * Utility class to load and cache your assets
  *
@@ -64,7 +74,11 @@ class InfiAssets
    *
    * @param directory image's directory (you can also put an `FlxGraphic` object)
    */
+  #if flixel
   public function getImage(directory:FlxGraphicAsset):Graphic
+  #else
+  public function getImage(directory:String):Graphic
+  #end
   {
     if (!exists(directory)) throw 'The image file from $directory doesn\'t exists';
 

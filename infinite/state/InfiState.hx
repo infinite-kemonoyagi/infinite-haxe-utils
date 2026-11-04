@@ -28,9 +28,9 @@ class InfiState extends FlxState
   public function new() super();
 
   @:noCompletion
-  private function get_assets():InfiAssets return InfiAssets.assets;
+  private function get_assets():InfiAssets return InfiAssets.instance;
 
   @:noCompletion
-  private function get_memory():InfiAssets return InfiAssets.assets.memory;
+  private function get_memory():InfiAssetsMemory return InfiAssets.instance.memory;
 }
 #end

@@ -1,6 +1,12 @@
 package infinite.assets;
 
+#if flixel
+import flixel.FlxG;
+import flixel.system.FlxAssets.FlxGraphicAsset;
+#end
+
 import haxe.ds.StringMap;
+import openfl.utils.Assets;
 
 /**
  * Class to storage all your loaded assets with some useful features
@@ -69,7 +75,11 @@ class InfiAssetsMemory
    * @param directory image's directory (you can also put an `FlxGraphic` object)
    * @param permanent the image won't be deleted
    */
+  #if flixel
   public function loadImage(directory:FlxGraphicAsset, permanent:Bool = false):Void
+  #else
+  public function loadImage(directory:String, permanent:Bool = false):Void
+  #end
   {
     function getDirectory():String return (directory is Graphic) ? (directory : Graphic).assetsKey : directory;
     function addToPermanent():Void permanentImages.push(getDirectory());
