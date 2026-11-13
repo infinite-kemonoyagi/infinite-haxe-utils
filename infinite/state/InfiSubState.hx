@@ -6,7 +6,7 @@ import flixel.FlxSubState;
 import infinite.assets.InfiAssets;
 import infinite.assets.InfiAssetsMemory;
 
-class InfiState extends FlxSubState
+class InfiSubState extends FlxSubState
 {
   /**
    * load and cache your assets
